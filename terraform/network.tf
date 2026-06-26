@@ -89,7 +89,7 @@ resource "aws_security_group" "rds_sg" {
 
 # Create an RDS DB Subnet Group using the default subnets
 resource "aws_db_subnet_group" "rock_of_ages" {
-  name       = "rock-of-ages-subnet-group"
+  name       = "rock-of-ages-subnet-group-2"
   subnet_ids = data.aws_subnets.default.ids
   tags = {
     Name = "rock-of-ages-db-subnet-group"
